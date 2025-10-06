@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 li.textContent = user.name;
                 userList.append(li);
             });
-            dataContainer.append(userList);
+            dataContainer.appendChild(userList);
         } catch(error) {
             dataContainer.innerHTML = "";
             dataContainer.textContent = "Failed to load user data.";
